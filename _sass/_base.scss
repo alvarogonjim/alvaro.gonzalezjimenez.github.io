@@ -114,7 +114,7 @@ blockquote {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 25%;
     .address {
       p { display: block; }
     }
@@ -251,9 +251,9 @@ blockquote {
 // Social (bottom)
 
 .social {
-  text-align: center;
+  text-align: left;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -462,7 +462,6 @@ footer.sticky-bottom {
 
 
 // Publications
-
 .publications {
   margin-top: 2rem;
   h1 {
@@ -486,6 +485,10 @@ footer.sticky-bottom {
     margin-bottom: -2rem;
     text-align: right;
   }
+  strong {
+    color: var(--global-theme-color);
+  }
+
   ol.bibliography {
     list-style: none;
     padding: 0;
@@ -516,6 +519,45 @@ footer.sticky-bottom {
         .award {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
+        }
+        insub {
+          display: inline-block;
+          background-color: var(--global-footer-bg-color);
+          padding-left: 1rem;
+          padding-right: 1rem;
+          a {
+            color: var(--global-footer-text-color);
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+        wksp {
+          color: var(--global-theme-color) !important;
+          display: inline-block;
+          background-color: var(--global-bg-color);
+          padding-left: 1rem;
+          padding-right: 1rem;
+          a {
+            color: red;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+        award {
+          // background-color: var(--global-bg-color);
+          color: var(--global-theme-color) !important;
+          display: inline-block;
+          background-color: var(--global-bg-color);
+          padding-left: 1rem;
+          padding-right: 1rem;
+          a {
+            color: red;
+            &:hover {
+              text-decoration: none;
+            }
+          }
         }
       }
       .title {
@@ -554,18 +596,6 @@ footer.sticky-bottom {
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
-          }
-        }
-      }
-      .badges {
-        span {
-          display: inline-block;
-          color: $black-color;
-          height: 100%;
-          padding-left: 0.5rem;
-          vertical-align: middle;
-          &:hover {
-            text-decoration: underline;
           }
         }
       }
